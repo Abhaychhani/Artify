@@ -1,14 +1,22 @@
+import Drawing from "./drawing.js";
+import Event from "./event.js";
+
 class Main {
     constructor() {
         this.canvas=document.getElementById('canvas');
         this.ctx=this.canvas.getContext('2d');
-        this.width=this.canvas.width=window.innerWidth*0.5;
-        this.height=this.canvas.height=window.innerHeight*0.75;
+        this.width=this.canvas.width=600;
+        this.height=this.canvas.height=500;
+
+        this.drawing=new Drawing(this);
+        this.event=new Event(this);
     }
     render(){
-
+        // this.drawing.draw();
+        // this.drawing.update();
     }
     animate(timeStamps){
+        
         this.render();
         window.requestAnimationFrame((timeStamps)=>this.animate(timeStamps));
     }
