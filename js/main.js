@@ -12,8 +12,7 @@ class Main {
         this.event=new Event(this);
     }
     render(){
-        // this.drawing.draw();
-        // this.drawing.update();
+        
     }
     animate(timeStamps){
         
