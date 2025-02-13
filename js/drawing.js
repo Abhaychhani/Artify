@@ -48,7 +48,7 @@ class Drawing {
             // })
         }
     }
-    stop(e){
+    stop(){
         this.isDrawing=false;
         this.strokes.push(this.stroke)
         this.stroke=[];
