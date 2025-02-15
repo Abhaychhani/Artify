@@ -1,6 +1,6 @@
+import UI from "./ui.js";
 import Drawing from "./drawing.js";
 import Event from "./event.js";
-
 class Main {
     constructor() {
         this.canvas=document.getElementById('canvas');
@@ -8,6 +8,7 @@ class Main {
         this.width=this.canvas.width=600;
         this.height=this.canvas.height=500;
 
+        this.ui=new UI(this);
         this.drawing=new Drawing(this);
         this.event=new Event(this);
     }

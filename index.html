@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <nav id="navbar">
+        <ul class="btn-menu">
+            <button id="undoBtn" class="btn">Undo</button>
+            <button id="downloadBtn" class="btn">Download Image</button>
+        </ul>
+    </nav>
+    <div class="strokeSize">
+        <input type="range" id="strokeInput" value="2" min="2" max="100">
+        <p class="stroke-size-num"></p>
+    </div>
     <canvas id="canvas"></canvas>
 </body>
 <script type="module" src="./js/main.js"></script>
