@@ -1,0 +1,25 @@
+
+/* large screens */
+@media screen and (min-width:1200px) {
+    #navbar{
+       padding: 0 5rem;
+    }   
+}
+/* laptop screens */
+@media screen and (max-width:1200px) {
+    #navbar{
+       padding: 0 3rem;
+    }   
+}
+/* tablet screens */
+@media screen and (max-width:768px) {
+    #navbar{
+       padding: 0 1.5rem;
+    }   
+}
+/* Phone screens  */
+@media screen and (max-width:480px) {
+    #navbar{
+       padding: 5px;
+    }   
+}

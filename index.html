@@ -9,21 +9,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <title>Artify</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <nav id="navbar">
-      <ul class="btn-menu">
-        <button id="bucketBtn" class="btn">Fill Bucket</button>
-        <button id="undoBtn" class="btn">Undo</button>
-        <button id="downloadBtn" class="btn">Download Image</button>
+      <div class="logo"><span>A</span>rtify</div>
+      <ul class="menu">
+        <li>File</li>
+        <li>Edit</li>
+        <li>Settings</li>
       </ul>
     </nav>
-    <input type="color" id="strokeColor" />
-    <div class="strokeSize">
-      <input type="range" id="strokeInput" value="2" min="2" max="100" />
-      <p class="stroke-size-num"></p>
-    </div>
+    <section id="toolbar">
+      <!-- <span>toolbar</span> -->
+        <input type="number" id="strokeSize" value="2" min="2" max="100" />
+      <input type="color" id="strokeColor" />
+      <button id="undoBtn" class="btn">UNDO</button>
+      <button id="bucketBtn" class="btn">FILL</button>
+      <button id="downloadBtn" class="btn">SAVE</button>
+    </section>
+
     <canvas id="canvas"></canvas>
+
+    <section id="statusbar">
+      drawing info is show here!
+    </section>
   </body>
   <script type="module" src="./js/main.js"></script>
 </html>
